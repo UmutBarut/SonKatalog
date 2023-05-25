@@ -1,0 +1,46 @@
+
+@using Katalog.Entity;
+
+@model List<Marka>
+
+<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+    <div class="container">
+        <form asp-controller="Admin" asp-action="TipTanimlama" method="post">
+            <div class="card card-bordered">
+                <div class="card-header">
+                    <h3 class="card-title">Tip Tanımlayın</h3>
+
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                    
+                        <div class="col col-md-6">
+                            <label for="exampleFormControlInput1" class="required form-label">Araç Markası</label>
+                            <select class="form-select form-select-sm form-select-solid"  data-control="select2" id="selectpicker"
+                                data-placeholder="Marka Seçiniz" name="MarkaID">
+                                <option selected value=""></option>
+                                @foreach (var item in Model)
+                                {
+                                    <option value="@item.MarkaID">@item.MarkaAdi</option>
+                                }
+
+                            </select>
+                        </div>
+                        <div class="col col-md-6">
+                            <div class="mb-10">
+                                <label for="exampleFormControlInput1" class="required form-label">Tip Adı</label>
+                                <input type="text" class="form-control form-control-sm form-control-solid" name="TipAdi"
+                                    placeholder="Tip Adı Giriniz" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                        <button type="submit" class="btn btn-success" style="float: right;">Tip Ekle</button>
+                </div>
+            </div>
+        </form>
+        
+    </div>
+</div>

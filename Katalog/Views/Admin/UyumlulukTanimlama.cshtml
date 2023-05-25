@@ -1,0 +1,82 @@
+@using Katalog.ViewModels;
+
+@model UyumlulukViewModel;
+
+<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+    <div class="container">
+        <form asp-controller="Admin" asp-action="UyumlulukTanimlama" method="post">
+            <div class="card card-bordered">
+                <div class="card-header">
+                    <h3 class="card-title">Uyumluluk Tanımlayın</h3>
+
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col col-md-6 mb-10">
+                            <label for="exampleFormControlInput1" class="required form-label">Urun No</label>
+                            <select class="form-select form-select-sm form-select-solid" data-control="select2"
+                                name="UrunID" data-placeholder="Urun Seçiniz">
+                                <option selected value=""></option>
+                                @foreach (var item in Model.Urunler)
+                                {
+                                    <option value="@item.UrunID">@item.UrunNo</option>
+                                }
+
+                            </select>
+                        </div>
+                        <div class="col col-md-6">
+                            <label for="exampleFormControlInput1" class="required form-label">Araç Markası</label>
+                            <select class="form-select form-select-sm form-select-solid" data-control="select2"
+                                name="MarkaID" data-placeholder="Marka Seçiniz">
+                                <option selected value=""></option>
+                                @foreach (var item in Model.Markalar)
+                                {
+                                    <option value="@item.MarkaID">@item.MarkaAdi</option>
+                                }
+
+                            </select>
+                        </div>
+                        <div class="col col-md-6">
+                            <label for="exampleFormControlInput1" class="required form-label">Araç Tipi</label>
+                            <select class="form-select form-select-sm form-select-solid" data-control="select2"
+                                name="TipID" data-placeholder="Tip Seçiniz">
+                                <option selected value=""></option>
+                                @foreach (var item in Model.Tipler)
+                                {
+                                    <option value="@item.TipID">@item.TipAdi</option>
+                                }
+
+                            </select>
+                        </div>
+                        <div class="col col-md-6">
+                            <div class="mb-10">
+                                <label for="exampleFormControlInput1" class="required form-label">Araç Modeli</label>
+                                <select class="form-select form-select-sm form-select-solid" data-control="select2"
+                                    name="ModelID" data-placeholder="Model Seçiniz">
+                                    <option selected value=""></option>
+                                    @foreach (var item in Model.Modeller)
+                                    {
+                                        <option value="@item.ModelID">@item.ModelAdi</option>
+                                    }
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col col-md-6">
+                            <div class="mb-10">
+                                <label for="exampleFormControlInput1" class="required form-label">Uyumluluk</label>
+                                <input type="text" class="form-control form-control-sm form-control-solid" name="Uyum"
+                                    placeholder="Uyumluluk Giriniz" />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-success" style="float: right;">Uyumluluk Ekle</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

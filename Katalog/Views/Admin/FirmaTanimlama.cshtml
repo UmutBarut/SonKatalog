@@ -1,0 +1,29 @@
+<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+    <div class="container">
+
+        <div class="card card-bordered">
+            <div class="card-header">
+                <h3 class="card-title">Firma Tanımlayın</h3>
+
+            </div>
+            <form asp-controller="Admin" asp-action="FirmaTanimlama" method="post">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col col-md-6">
+                                <div class="mb-10">
+                                    <label for="exampleFormControlInput1" class="required form-label">Firma Adı</label>
+                                    <input type="text" class="form-control form-control-sm form-control-solid"
+                                        placeholder="Firma Adı Giriniz" name="FirmaAdi" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                            <button type="submit" class="btn btn-success" style="float: right;">Firma Ekle</button>
+                    </div>
+            </form>
+        </div>
+        
+    </div>
+</div>

@@ -1,0 +1,84 @@
+C:\Users\Acer\Desktop\UMUT VS\Katalog\Katalog.Core\bin\Debug\net6.0\Katalog.Core.deps.json
+C:\Users\Acer\Desktop\UMUT VS\Katalog\Katalog.Core\bin\Debug\net6.0\Katalog.Core.dll
+C:\Users\Acer\Desktop\UMUT VS\Katalog\Katalog.Core\bin\Debug\net6.0\Katalog.Core.pdb
+C:\Users\Acer\Desktop\UMUT VS\Katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.csproj.AssemblyReference.cache
+C:\Users\Acer\Desktop\UMUT VS\Katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Acer\Desktop\UMUT VS\Katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.AssemblyInfoInputs.cache
+C:\Users\Acer\Desktop\UMUT VS\Katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.AssemblyInfo.cs
+C:\Users\Acer\Desktop\UMUT VS\Katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.csproj.CoreCompileInputs.cache
+C:\Users\Acer\Desktop\UMUT VS\Katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.dll
+C:\Users\Acer\Desktop\UMUT VS\Katalog\Katalog.Core\obj\Debug\net6.0\refint\Katalog.Core.dll
+C:\Users\Acer\Desktop\UMUT VS\Katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.pdb
+C:\Users\Acer\Desktop\UMUT VS\Katalog\Katalog.Core\obj\Debug\net6.0\ref\Katalog.Core.dll
+C:\Users\Acer\Desktop\UMUT VS\Katalog\Katalog.Core\bin\Debug\net6.0\Katalog.Core.runtimeconfig.json
+C:\Users\Acer\Desktop\UMUT VS\Katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.genruntimeconfig.cache
+C:\Users\Umut\Desktop\Katalog\Katalog.Core\bin\Debug\net6.0\Katalog.Core.deps.json
+C:\Users\Umut\Desktop\Katalog\Katalog.Core\bin\Debug\net6.0\Katalog.Core.runtimeconfig.json
+C:\Users\Umut\Desktop\Katalog\Katalog.Core\bin\Debug\net6.0\Katalog.Core.dll
+C:\Users\Umut\Desktop\Katalog\Katalog.Core\bin\Debug\net6.0\Katalog.Core.pdb
+C:\Users\Umut\Desktop\Katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.csproj.AssemblyReference.cache
+C:\Users\Umut\Desktop\Katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Umut\Desktop\Katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.AssemblyInfoInputs.cache
+C:\Users\Umut\Desktop\Katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.AssemblyInfo.cs
+C:\Users\Umut\Desktop\Katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.csproj.CoreCompileInputs.cache
+C:\Users\Umut\Desktop\Katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.dll
+C:\Users\Umut\Desktop\Katalog\Katalog.Core\obj\Debug\net6.0\refint\Katalog.Core.dll
+C:\Users\Umut\Desktop\Katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.pdb
+C:\Users\Umut\Desktop\Katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.genruntimeconfig.cache
+C:\Users\Umut\Desktop\Katalog\Katalog.Core\obj\Debug\net6.0\ref\Katalog.Core.dll
+C:\Users\Acer\Desktop\Katalog\Katalog.Core\bin\Debug\net6.0\Katalog.Core.deps.json
+C:\Users\Acer\Desktop\Katalog\Katalog.Core\bin\Debug\net6.0\Katalog.Core.runtimeconfig.json
+C:\Users\Acer\Desktop\Katalog\Katalog.Core\bin\Debug\net6.0\Katalog.Core.dll
+C:\Users\Acer\Desktop\Katalog\Katalog.Core\bin\Debug\net6.0\Katalog.Core.pdb
+C:\Users\Acer\Desktop\Katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.csproj.AssemblyReference.cache
+C:\Users\Acer\Desktop\Katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Acer\Desktop\Katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.AssemblyInfoInputs.cache
+C:\Users\Acer\Desktop\Katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.AssemblyInfo.cs
+C:\Users\Acer\Desktop\Katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.csproj.CoreCompileInputs.cache
+C:\Users\Acer\Desktop\Katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.dll
+C:\Users\Acer\Desktop\Katalog\Katalog.Core\obj\Debug\net6.0\refint\Katalog.Core.dll
+C:\Users\Acer\Desktop\Katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.pdb
+C:\Users\Acer\Desktop\Katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.genruntimeconfig.cache
+C:\Users\Acer\Desktop\Katalog\Katalog.Core\obj\Debug\net6.0\ref\Katalog.Core.dll
+C:\Users\Umut\Desktop\sonkataloggit\Katalog.Core\bin\Debug\net6.0\Katalog.Core.deps.json
+C:\Users\Umut\Desktop\sonkataloggit\Katalog.Core\bin\Debug\net6.0\Katalog.Core.runtimeconfig.json
+C:\Users\Umut\Desktop\sonkataloggit\Katalog.Core\bin\Debug\net6.0\Katalog.Core.dll
+C:\Users\Umut\Desktop\sonkataloggit\Katalog.Core\bin\Debug\net6.0\Katalog.Core.pdb
+C:\Users\Umut\Desktop\sonkataloggit\Katalog.Core\obj\Debug\net6.0\Katalog.Core.csproj.AssemblyReference.cache
+C:\Users\Umut\Desktop\sonkataloggit\Katalog.Core\obj\Debug\net6.0\Katalog.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Umut\Desktop\sonkataloggit\Katalog.Core\obj\Debug\net6.0\Katalog.Core.AssemblyInfoInputs.cache
+C:\Users\Umut\Desktop\sonkataloggit\Katalog.Core\obj\Debug\net6.0\Katalog.Core.AssemblyInfo.cs
+C:\Users\Umut\Desktop\sonkataloggit\Katalog.Core\obj\Debug\net6.0\Katalog.Core.csproj.CoreCompileInputs.cache
+C:\Users\Umut\Desktop\sonkataloggit\Katalog.Core\obj\Debug\net6.0\Katalog.Core.dll
+C:\Users\Umut\Desktop\sonkataloggit\Katalog.Core\obj\Debug\net6.0\refint\Katalog.Core.dll
+C:\Users\Umut\Desktop\sonkataloggit\Katalog.Core\obj\Debug\net6.0\Katalog.Core.pdb
+C:\Users\Umut\Desktop\sonkataloggit\Katalog.Core\obj\Debug\net6.0\Katalog.Core.genruntimeconfig.cache
+C:\Users\Umut\Desktop\sonkataloggit\Katalog.Core\obj\Debug\net6.0\ref\Katalog.Core.dll
+C:\Users\Umut\Desktop\Katalog Yedek\06.01.2023\katalog\Katalog.Core\bin\Debug\net6.0\Katalog.Core.deps.json
+C:\Users\Umut\Desktop\Katalog Yedek\06.01.2023\katalog\Katalog.Core\bin\Debug\net6.0\Katalog.Core.runtimeconfig.json
+C:\Users\Umut\Desktop\Katalog Yedek\06.01.2023\katalog\Katalog.Core\bin\Debug\net6.0\Katalog.Core.dll
+C:\Users\Umut\Desktop\Katalog Yedek\06.01.2023\katalog\Katalog.Core\bin\Debug\net6.0\Katalog.Core.pdb
+C:\Users\Umut\Desktop\Katalog Yedek\06.01.2023\katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.csproj.AssemblyReference.cache
+C:\Users\Umut\Desktop\Katalog Yedek\06.01.2023\katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Umut\Desktop\Katalog Yedek\06.01.2023\katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.AssemblyInfoInputs.cache
+C:\Users\Umut\Desktop\Katalog Yedek\06.01.2023\katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.AssemblyInfo.cs
+C:\Users\Umut\Desktop\Katalog Yedek\06.01.2023\katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.csproj.CoreCompileInputs.cache
+C:\Users\Umut\Desktop\Katalog Yedek\06.01.2023\katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.dll
+C:\Users\Umut\Desktop\Katalog Yedek\06.01.2023\katalog\Katalog.Core\obj\Debug\net6.0\refint\Katalog.Core.dll
+C:\Users\Umut\Desktop\Katalog Yedek\06.01.2023\katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.pdb
+C:\Users\Umut\Desktop\Katalog Yedek\06.01.2023\katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.genruntimeconfig.cache
+C:\Users\Umut\Desktop\Katalog Yedek\06.01.2023\katalog\Katalog.Core\obj\Debug\net6.0\ref\Katalog.Core.dll
+C:\Users\Acer\Desktop\katalog proje\katalog\Katalog.Core\bin\Debug\net6.0\Katalog.Core.deps.json
+C:\Users\Acer\Desktop\katalog proje\katalog\Katalog.Core\bin\Debug\net6.0\Katalog.Core.runtimeconfig.json
+C:\Users\Acer\Desktop\katalog proje\katalog\Katalog.Core\bin\Debug\net6.0\Katalog.Core.dll
+C:\Users\Acer\Desktop\katalog proje\katalog\Katalog.Core\bin\Debug\net6.0\Katalog.Core.pdb
+C:\Users\Acer\Desktop\katalog proje\katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.csproj.AssemblyReference.cache
+C:\Users\Acer\Desktop\katalog proje\katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Acer\Desktop\katalog proje\katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.AssemblyInfoInputs.cache
+C:\Users\Acer\Desktop\katalog proje\katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.AssemblyInfo.cs
+C:\Users\Acer\Desktop\katalog proje\katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.csproj.CoreCompileInputs.cache
+C:\Users\Acer\Desktop\katalog proje\katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.dll
+C:\Users\Acer\Desktop\katalog proje\katalog\Katalog.Core\obj\Debug\net6.0\refint\Katalog.Core.dll
+C:\Users\Acer\Desktop\katalog proje\katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.pdb
+C:\Users\Acer\Desktop\katalog proje\katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.genruntimeconfig.cache
+C:\Users\Acer\Desktop\katalog proje\katalog\Katalog.Core\obj\Debug\net6.0\ref\Katalog.Core.dll

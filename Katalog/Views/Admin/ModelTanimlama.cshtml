@@ -1,0 +1,87 @@
+@using Katalog.Entity;
+@using Katalog.ViewModels;
+
+@model ModelViewModel;
+
+<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+    <div class="container">
+
+        <form asp-controller="Admin" asp-action="ModelTanimlama" id="selectt" method="post">
+                <div class="card card-bordered">
+                    <div class="card-header">
+                        <h3 class="card-title">Tip Tanımlayın</h3>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col col-md-6">
+                                <label for="exampleFormControlInput1" class="required form-label">Araç Markası</label>
+                                <select class="form-select form-select-sm form-select-solid" data-control="select2" name="MarkaID" 
+                                    data-placeholder="Marka Seçiniz">
+                                    <option selected value=""></option>
+                                    @foreach (var item in Model.Markalar)
+                                    {
+                                        <option value="@item.MarkaID">@item.MarkaAdi</option>
+                                    }
+                                    
+                                    
+                                </select>
+                            </div>
+                            <div class="col col-md-6">
+                                <div class="mb-10">
+                                    <label for="exampleFormControlInput1" class="required form-label">Araç Tipi</label>
+                                    <select class="form-select form-select-sm form-select-solid" data-control="select2" name="TipID"
+                                        data-placeholder="Tip Seçiniz">
+                                        <option selected value=""></option>
+                                        @foreach (var item in Model.Tipler)
+                                        {
+                                            <option value="@item.TipID">@item.TipAdi</option>
+                                        }
+                                        
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col col-md-6">
+                                <div class="mb-10">
+                                    <label for="exampleFormControlInput1" class="required form-label">Model Adı</label>
+                                    <input type="text" class="form-control form-control-sm form-control-solid" name="ModelAdi"
+                                        placeholder="Model Adı Giriniz" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <button type="submit" class="btn btn-success" style="float: right;">Model Ekle</button>
+                    </div>
+                </div>
+        </form>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function(){
+        $('#selectt').submit(function(e){
+            e.preventDefault();
+        
+        var form = $(this);
+        var actionUrl = form.attr('ModelTanimlama');
+
+
+            $.ajax({
+            type:"POST"
+            url: "Admin/ModelTanimlama",
+            data: form.serialize(),
+            dataType:"json"
+            success:function(data)
+            {
+
+            }
+        
+            });
+        });
+    });
+
+
+</script>

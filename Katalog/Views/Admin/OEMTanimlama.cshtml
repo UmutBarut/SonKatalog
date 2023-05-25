@@ -1,0 +1,55 @@
+@using Katalog.ViewModels;
+
+@model OEMViewModel;
+
+<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+    <div class="container">
+        <form asp-controller="Admin" asp-action="OEMTanimlama" method="post">
+            <div class="card card-bordered">
+                <div class="card-header">
+                    <h3 class="card-title">OEM Tanımlayın</h3>
+                
+                </div>
+            
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col col-md-6">
+                            <label for="exampleFormControlInput1" class="required form-label">Ürün No</label>
+                            <select class="form-select form-select-sm form-select-solid" data-control="select2" name="UrunID"
+                                data-placeholder="Ürün Seçiniz">
+                                <option selected value=""></option>
+                                @foreach (var item in Model.Urunler)
+                                {
+                                    <option value="@item.UrunID">@item.UrunNo</option>
+                                }
+                                
+                            </select>
+                        </div>
+                        <div class="col col-md-6">
+                            <div class="mb-10">
+                                <label for="exampleFormControlInput1" class="required form-label">OEM No</label>
+                                <input type="text" class="form-control form-control-sm form-control-solid" name="OEMno"
+                                    placeholder="OEM No Giriniz" />
+                            </div>
+                        </div>
+                        <div class="col col-md-6">
+                            <label for="exampleFormControlInput1" class="required form-label">Araç Markası</label>
+                            <select class="form-select form-select-sm form-select-solid" data-control="select2" name="MarkaID"
+                                data-placeholder="Marka Seçiniz">
+                                <option selected value=""></option>
+                                @foreach (var item in Model.Markalar)
+                                {
+                                    <option value="@item.MarkaID">@item.MarkaAdi</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-success" style="float: right;">OEM Ekle</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

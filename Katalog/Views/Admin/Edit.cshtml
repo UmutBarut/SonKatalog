@@ -1,0 +1,68 @@
+@using Katalog.ViewModels;
+@model UrunViewModel;
+
+<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+    <div class="container">
+
+        <form asp-controller="Admin" asp-action="Edit" method="POST" enctype="multipart/form-data">
+
+            <input type="hidden" name="UrunID" value="@Model.UrunID">
+            <div class="card card-bordered">
+                <div class="card-header">
+                    <h3 class="card-title">Ürünü Düzenleyin</h3>
+
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col col-md-6">
+                            <div class="mb-10">
+                                <label for="UrunNo" class="required form-label">Ürün No</label>
+                                <input type="text" class="form-control form-control-sm form-control-solid"
+                                    placeholder="Ürün No Giriniz" asp-for="UrunNo" />
+                            </div>
+                        </div>
+                        <div class="col col-md-6">
+                            <div class="mb-10">
+                                <label for="UrunAdi" class="required form-label">Ürün Adı</label>
+                                <input type="text" class="form-control form-control-sm form-control-solid"
+                                    placeholder="Ürün Adı Giriniz" asp-for="UrunAdi" />
+                            </div>
+                        </div>
+                        <div class="col col-md-6">
+                            <div class="mb-10">
+                                <label for="Olculer" class="required form-label">Ölçüler</label>
+                                <input type="text" class="form-control form-control-sm form-control-solid"
+                                    placeholder="Ürün Ölçüsü Giriniz" asp-for="Olculer" />
+                            </div>
+                        </div>
+                        <div class="col col-md-6">
+                            <div class="mb-10">
+                                <label for="EANno" class="required form-label">EAN No</label>
+                                <input type="text" class="form-control form-control-sm form-control-solid"
+                                    placeholder="EAN No Giriniz" asp-for="EANno" />
+                            </div>
+                        </div>
+                        <div class="col col-md-6">
+                            <div class="mb-10">
+                                <label for="EslestirilenUrunNo" class="form-label">Eşleştirilen Ürün No</label>
+                                <input type="text" class="form-control form-control-sm form-control-solid"
+                                    placeholder="Ürün No Giriniz" asp-for="EslestirilenUrunNo" />
+                            </div>
+                        </div>
+                        <div class="col col-md-6">
+                            <label for="upload" class="photo-edit-link">
+                                <input type="file" name="file" id="upload" />
+                                <div class="text-center align-items-center photo-edit-div"><i
+                                        class="fa-solid fa-pen photo-edit-icon"></i></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-success" style="float: right;">Kaydet</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

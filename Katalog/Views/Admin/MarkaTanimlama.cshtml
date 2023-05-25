@@ -1,0 +1,68 @@
+<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+    <div class="container">
+        <form asp-controller="Admin" asp-action="MarkaTanimlama" method="post" enctype="multipart/form-data">
+            <div class="card card-bordered">
+                <div class="card-header">
+                    <h3 class="card-title">Marka Tanımlayın</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                       <div class="col-md-6">
+                                <label class="col-lg-4 fw-semibold text-muted">Marka Resmi</label>
+                                <div class="col-lg-8 mb-10">
+                                    <!--begin::Image input-->
+                                    <div class="image-input image-input-outline" data-kt-image-input="true">
+                                            <div class="image-input-wrapper w-125px h-125px"
+                                                style="opacity: 0.2; background-image: url(/app/images/logos/AkuNOSResize.png)">
+                                            </div>
+                                        <!--begin::Edit button-->
+                                        <label
+                                            class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
+                                            data-kt-image-input-action="change" data-bs-toggle="tooltip" data-bs-dismiss="click"
+                                            title="Change avatar">
+                                            <i class="bi bi-pencil-fill fs-7"></i>
+
+                                            <!--begin::Inputs-->
+                                            <input type="file" name="file" accept=".png, .jpg, .jpeg" style="object-fit:cover;" />
+                                            <input type="hidden" name="avatar_remove" />
+                                            <!--end::Inputs-->
+                                        </label>
+                                        <!--end::Edit button-->
+
+                                        <!--begin::Cancel button-->
+                                        <span
+                                            class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
+                                            data-kt-image-input-action="cancel" data-bs-toggle="tooltip" data-bs-dismiss="click"
+                                            title="Cancel avatar">
+                                            <i class="bi bi-x fs-2"></i>
+                                        </span>
+                                        <!--end::Cancel button-->
+
+                                        <!--begin::Remove button-->
+                                        <span
+                                            class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
+                                            data-kt-image-input-action="remove" data-bs-toggle="tooltip" data-bs-dismiss="click"
+                                            title="Remove avatar">
+                                            <i class="bi bi-x fs-2"></i>
+                                        </span>
+                                        <!--end::Remove button-->
+                                    </div>
+                                    <!--end::Image input-->
+                                </div>
+                            </div>
+                             <div class="col col-md-6">
+                                <div class="mb-10">
+                                    <label for="exampleFormControlInput1" class="required form-label">Marka Adı</label>
+                                    <input type="text" class="form-control form-control-sm form-control-solid"
+                                        placeholder="Marka Adı Giriniz" name="MarkaAdi" />
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                        <button type="submit" class="btn btn-success" style="float: right;">Marka Ekle</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

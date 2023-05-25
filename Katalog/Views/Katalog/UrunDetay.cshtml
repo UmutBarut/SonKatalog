@@ -1,0 +1,142 @@
+@using Katalog.ViewModels;
+
+@model UrunDetayViewModel;
+
+
+<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+    <div class="container">
+        <h3 class=" d-flex justify-content-center">@Model.urun.UrunAdi - @Model.urun.UrunNo</h3>
+        <div class="row">
+            <div class="col-md-2 mt-10">
+                <img src="@Model.urun.ImagePath" class="img-thumbnail">
+            </div>
+            <div class="col-md-5 mt-10">
+
+                <table id="kt_datatable_vertical_scroll" class="table table-striped table-row-bordered gy-5 gs-7">
+                    <thead>
+                        <tr class="fw-semibold fs-6 text-gray-800">
+                            <th>
+                                <h5>OEM No</h5>
+                            </th>
+                            <th>
+                                <h5>Marka</h5>
+                            </th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @foreach (var item in Model.OEMLER.Where(c => c.UrunID == Model.urun.UrunID).ToList())
+                        {
+
+                            <tr>
+                                <td style="vertical-align: middle;">@item.OEMno</td>
+                                <td style="vertical-align: middle;">@(Model.Markalar.Where(c => c.MarkaID ==
+                                item.MarkaID).FirstOrDefault() != null ?
+                                Model.Markalar.Where(c => c.MarkaID == item.MarkaID).FirstOrDefault().MarkaAdi : "")
+                                </td>
+
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="col-md-5 mt-10">
+                <table id="kt_datatable_vertical_scroll" class="table table-striped table-row-bordered gy-5 gs-7">
+                    <thead>
+                        <tr class="fw-semibold fs-6 text-gray-800">
+                            <th>
+                                <h5>Ref No</h5>
+                            </th>
+                            <th>
+                                <h5>Firma</h5>
+                            </th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Firmalar)
+                        {
+
+                            <tr>
+
+                                <td style="vertical-align: middle;">@(Model.Referanslar.Where(c => c.FirmaID ==
+                                item.FirmaID).FirstOrDefault() != null ?
+                                Model.Referanslar.Where( c=> c.FirmaID == item.FirmaID).FirstOrDefault().RefNo :
+                                "Referans No Yok")</td>
+                                <td style="vertical-align: middle;">@item.FirmaAdi</td>
+                            </tr>
+                        }
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+        <div class="card card-flush shadow-sm mt-10">
+
+            <div class="card-body py-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="exampleFormControlInput1" class="form-label">Ölçüler</label>
+                        <input type="text" class="form-control form-control-solid" value="@Model.urun.Olculer"
+                            disabled />
+                    </div>
+                    <div class="col-md-4">
+                        <label for="exampleFormControlInput1" class="form-label">EAN</label>
+                        <input type="text" class="form-control form-control-solid" value="@Model.urun.EANno" disabled />
+                    </div>
+
+                    <a class="col-md-4" href="/Katalog/UrunDetay/4">
+
+                        <label for="exampleFormControlInput1" class="form-label">Eşleşirilen Ürün No</label>
+                        <input type="text" class="form-control form-control-solid"
+                            value="@(Model.kullanilanParcalar.Where(c => c.UrunID == Model.urun.UrunID).FirstOrDefault() != null ? @Model.kullanilanParcalar.Where(c => c.UrunID == Model.urun.UrunID).FirstOrDefault().KullanildigiParcaUrunNo : 'a')"
+                            disabled />
+
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="mt-10">
+
+            <table id="kt_datatable_vertical_scroll" class="table table-striped table-row-bordered gy-5 gs-7">
+                <thead>
+                    <tr class="fw-semibold fs-6 text-gray-800">
+                        <th>
+                            <h5>Marka</h5>
+                        </th>
+                        <th>
+                            <h5>Tip</h5>
+                        </th>
+                        <th>
+                            <h5>Model</h5>
+                        </th>
+                        <th>
+                            <h5>Uyumluluk</h5>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.detaytablosu.Where(c => c.UrunID == Model.urun.UrunID))
+                    {
+
+                        <tr>
+                            <td>@item.MarkaAdi</td>
+                            <td>@item.TipAdi</td>
+                            <td>@item.ModelAdi</td>
+                            <td>@item.Uyum</td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

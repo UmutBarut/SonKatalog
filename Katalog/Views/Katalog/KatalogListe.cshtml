@@ -1,0 +1,216 @@
+@using Katalog.ViewModels;
+
+
+
+@model AjaxViewModel;
+
+
+
+
+<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+    <div class="container">
+        <div class="container w-100">
+            <div class="row">
+
+                <!--begin::Main wrapper-->
+                <div id="kt_docs_search_handler_basic" data-kt-search-keypress="true" data-kt-search-min-length="2"
+                    data-kt-search-enter="true" data-kt-search-layout="inline">
+
+                    <!--begin::Input Form-->
+                    <form class="w-100 position-relative mb-5" method="get" asp-action="KatalogListe">
+                        <!--begin::Hidden input(Added to disable form autocomplete)-->
+                        <input type="hidden" />
+                        <!--end::Hidden input-->
+
+                        <!--begin::Icon-->
+                        <!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
+                        <span
+                            class="svg-icon svg-icon-2 svg-icon-lg-1 svg-icon-gray-500 position-absolute top-50 ms-5 translate-middle-y">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect opacity="0.5" x="17.0365" y="15.1223" width="8.15546" height="2" rx="1"
+                                    transform="rotate(45 17.0365 15.1223)" fill="currentColor"></rect>
+                                <path
+                                    d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </span>
+                        <!--end::Icon-->
+                        <!--begin::Input-->
+                        <input type="text" class="form-control form-control-lg form-control-solid px-15" name="search"
+                            value="" placeholder="Ürün Adı, Ürün No ve OEM Numarası İle Ara" />
+                        <!--end::Input-->
+
+
+
+                        <!--begin::Spinner-->
+                        <span class="position-absolute top-50 end-0 translate-middle-y lh-0 d-none me-5"
+                            data-kt-search-element="spinner">
+                            <span class="spinner-border h-15px w-15px align-middle text-gray-400"></span>
+                        </span>
+                        <!--end::Spinner-->
+
+                        <!--begin::Reset-->
+                        <span
+                            class="btn btn-flush btn-active-color-primary position-absolute top-50 end-0 translate-middle-y lh-0 me-5 d-none"
+                            data-kt-search-element="clear">
+
+                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
+                        </span>
+                        <!--end::Reset-->
+                    </form>
+                    <!--end::Form-->
+                    <div class="row">
+                        <div class="col-md-3">
+                            <select onchange="tipgetiren($(this).val())" class="form-select form-select-solid"
+                                data-control="select2" name="MarkaID" data-placeholder="Marka Seçiniz"
+                                id="markalarSelect">
+                                <option></option>
+                                @foreach (var item in Model.Markalar)
+                                {
+                                    <option value="@item.MarkaID">@item.MarkaAdi</option>
+                                }
+
+
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <select id="tipler" onchange="modelgetiren($(this).val())"
+                                class="form-select form-select-solid" data-control="select2"
+                                data-placeholder="Tip Seçiniz">
+                                <option></option>
+
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <select id="modeller" class="form-select form-select-solid" data-control="select2"
+                                data-placeholder="Model Seçiniz">
+                                <option></option>
+
+                            </select>
+                        </div>
+                        <div class="col-md-3 pt-1">
+                            <button class="btn btn-success btn-sm" onclick="searchle()">Ara</button>
+                        </div>
+                    </div>
+                    <!--begin::Illustration-->
+                    <div class="text-center px-4">
+                        <img class="mw-100 mh-200px" alt="image" src="/Resim/search1.png">
+                    </div>
+                    <!--end::Illustration-->
+
+
+                </div>
+                <!--end::Main wrapper-->
+
+            </div>
+
+            @if (Model.searchresults != null)
+            {
+                <div class="table-responsive">
+                    <table class="table table-striped gy-7 gs-7">
+                        <thead>
+
+                            <tr class="fw-semibold fs-6 text-gray-800 border-bottom border-gray-200">
+                                <th></th>
+                                <th>
+                                    <h5>Ürün No</h5>
+                                </th>
+                                <th>
+                                    <h5>Ürün Adı</h5>
+                                </th>
+                                <th>
+                                    <h5>Ölçüler</h5>
+                                </th>
+                                <th>
+                                    <h5>OEM No</h5>
+                                </th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            @foreach (var item in Model.searchresults)
+                            {
+                                <tr>
+                                    <td><img src="/Urunler/@item.ImagePath" width="100px"></td>
+                                    <td style="vertical-align: middle; ">@item.UrunNo</td>
+                                    <td style="vertical-align: middle; ">@item.UrunAdi</td>
+                                    <td style="vertical-align: middle; ">@item.Olculer</td>
+                                    <td style="vertical-align: middle;">@item.OEMno</td>
+                                    <td style="vertical-align: middle; "><a href="/Katalog/UrunDetay/@item.UrunID"
+                                    class="btn btn-success">Detay</a></td>
+
+                                    @if (User.Identity.IsAuthenticated)
+									{
+                                        <td style="vertical-align: middle;"><a href="/Admin/Edit/@item.UrunID"
+                                        class="btn btn-warning"><i class="fa-solid fa-pencil"></i>Düzenle</a></td>
+                                        <form action="/admin/delete" method="post">
+                                            <input type="hidden" name="UrunID" value="@item.UrunID">
+                                            <td style="vertical-align: middle;;"><button type="submit" class="btn btn-danger"><i
+                                                class="fa-solid fa-xmark"></i>Sil</button></td>
+                                        </form>
+                                    }
+
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<script>
+
+    function tipgetiren(value) {
+        $('#tipler').html("");
+        $.ajax({
+            url: "/Katalog/TipGetiren",
+            method: "GET",  // istek türü (GET veya POST)
+            data: { getiren: value },  // gönderilecek veriler
+            async: true,
+            success: function (result) {
+                console.log(result);
+                for (let item of result) {
+                    $('#tipler').append("<option value=" + item.tipID + ">" + item.tipAdi + "</option>");
+                }
+            }
+        });
+
+    }
+
+    function modelgetiren(value) {
+        $('#modeller').html("");
+        $.ajax({
+            url: "/Katalog/ModelGetiren",
+            method: "GET",  // istek türü (GET veya POST)
+            data: { getiren: value },  // gönderilecek veriler
+            async: true,
+            success: function (result) {
+                console.log(result);
+                for (let item of result) {
+                    let option = $('<option></option>');
+                    $('#modeller').append(option);
+                    $('#modeller').append('<option value="' + item.modelID + '">"' + item.modelAdi + '"</option>');
+                }
+            }
+        });
+    }
+
+    function searchle() {
+        let markaId = $('#markalarSelect').val();
+        let tipId = $('#tipler').val();
+        let modelId = $('#modeller').val();
+
+        var url = "/katalog/KatalogListe" + "?markaId=" + markaId + "&tipId=" + tipId + "&modelId=" + modelId;
+        document.location = url;
+
+    }
+
+
+
+
+</script>

@@ -1,0 +1,229 @@
+﻿@using Katalog.ViewModels;
+@model UserSignUpViewModel
+
+@{
+	Layout = "_authlayout";
+}
+
+
+    <!--begin::Body-->
+    <body id="kt_body" class="auth-bg bgi-size-cover bgi-attachment-fixed bgi-position-center bgi-no-repeat">
+                  
+        <!--Begin::Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FS8GGP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!--End::Google Tag Manager (noscript) -->
+        
+
+        <!--begin::Main-->
+            <!--begin::Root-->
+                <div class="d-flex flex-column flex-root">
+                    <div class="d-flex justify-content-start">
+                        <a asp-controller="Home" asp-action="Index">
+                            <img src="~/app/images/logos/AkuNOS1.png" class="mt-2 ms-1" width="130" height="100">
+                        </a>
+                    </div>
+                
+                <!--begin::Page bg image-->
+                    <style>
+                        body {
+                            background-image: url('/app/images/backgrounds/bg4.jpg');
+                        }
+                    </style>
+                <!--end::Page bg image-->
+
+                <!--begin::Authentication - Sign-up -->
+                <div class="d-flex flex-column flex-column-fluid flex-lg-row">
+                    <!--begin::Aside-->
+                    <div class="d-flex flex-center w-lg-50 pt-15 pt-lg-0 px-10">              
+                        <!--begin::Aside-->
+                        <div class="d-flex flex-center flex-lg-start flex-column">              
+                            <!--begin::Logo-->
+                            <a asp-controller="Home" asp-action="Index">
+                                <img alt="Logo" height="500" width="500" src="/demo7/dist/assets/media/illustrations/dozzy-1/4.png"/>
+                            </a>    
+                            <!--end::Logo-->            
+
+                            <!--begin::Title-->
+                            <h2 class="text-white fw-normal m-0"> 
+                                Branding tools designed for your business
+                            </h2>  
+                            <!--end::Title-->         
+                        </div>
+                        <!--begin::Aside-->    
+                    </div>
+                    <!--begin::Aside-->
+
+                    <!--begin::Body-->
+                    <div class="d-flex flex-column-fluid flex-lg-row-auto justify-content-center justify-content-lg-end p-12 pt-2 p-lg-20">
+                        <!--begin::Card-->
+                        <div class="bg-body d-flex flex-column align-items-stretch flex-center rounded-4 w-md-600px p-20">
+                            <!--begin::Wrapper-->
+                            <div class="d-flex flex-center flex-column flex-column-fluid px-lg-10 pb-5 pb-lg-10">
+                                <!--begin::Form-->
+                                <form asp-controller="Auth" asp-action="Register" method="POST" class="form w-100" novalidate="novalidate" id="kt_sign_up_form">
+
+                                    <div class="text-danger" asp-validation-summary="ModelOnly">
+
+                                    </div>
+
+                                    <!--begin::Heading-->
+                                    <div class="text-center mb-11">
+                                        <!--begin::Title-->
+                                        <h1 class="text-dark fw-bolder mb-3">
+                                           Kayıt Ol
+                                        </h1>
+                                        <!--end::Title-->
+
+                                        <!--begin::Subtitle-->
+                                        <div class="text-gray-500 fw-semibold fs-6">
+                                           Şimdi Kayıt Olun!
+                                        </div>
+                                        <!--end::Subtitle--->
+                                    </div>
+                                    <!--begin::Heading-->
+
+                                    <!--begin::Input group--->
+
+                                     <div class="fv-row mb-8">
+                                        <!--begin::Email-->
+                                        <span asp-validation-for="@Model.Mail" class="text-danger"></span>
+                                        <input type="text" asp-for="@Model.Mail" placeholder="Email" autocomplete="off" class="form-control bg-transparent"/> 
+                                        <!--end::Email-->
+                                    </div>
+
+                                    <div class="fv-row mb-8">
+                                        <!--begin::Email-->
+                                        <input type="text" asp-for="@Model.Username" placeholder="Kullanıcı Adı" autocomplete="off" class="form-control bg-transparent"/> 
+                                        <!--end::Email-->
+                                    </div>
+
+                                    <!--begin::Input group-->
+                                    <div class="fv-row mb-2" data-kt-password-meter="true">
+                                        <!--begin::Wrapper-->
+                                        
+                                            <!--begin::Input wrapper-->
+                                            <div class="position-relative">
+                                                <span asp-validation-for="@Model.Password" class="text-danger"></span>    
+                                                <input class="form-control bg-transparent" asp-for="@Model.Password" type="password" placeholder="Şifre" autocomplete="off"/>
+
+                                                <span class="btn btn-sm btn-icon position-absolute translate-middle top-50 end-0 me-n2" data-kt-password-meter-control="visibility">
+                                                    <i class="ki-duotone ki-eye-slash fs-2"></i>
+                                                    <i class="ki-duotone ki-eye fs-2 d-none"></i>                
+                                                </span>
+                                                <label class="text-muted mt-2">
+                                                    En az 5 karakter giriniz
+                                                </label>
+                                            </div>
+                                            <!--end::Input wrapper-->
+
+                                            @* <!--begin::Meter-->
+                                            <div class="d-flex align-items-center mb-3" data-kt-password-meter-control="highlight">
+                                                <div class="flex-grow-1 bg-secondary bg-active-success rounded h-5px me-2"></div>
+                                                <div class="flex-grow-1 bg-secondary bg-active-success rounded h-5px me-2"></div>
+                                                <div class="flex-grow-1 bg-secondary bg-active-success rounded h-5px me-2"></div>
+                                                <div class="flex-grow-1 bg-secondary bg-active-success rounded h-5px"></div>
+                                            </div>
+                                            <!--end::Meter--> *@
+                                       
+                                        <!--end::Wrapper-->
+
+                                        <!--begin::Hint-->
+                                        
+                                        <!--end::Hint-->
+                                    </div>
+                                    <!--end::Input group--->
+
+                                    <!--end::Input group--->
+                                    <div class="fv-row mb-8">    
+                                        <!--begin::Repeat Password-->
+                                        <input type="text" asp-for="@Model.ConfirmPassword" placeholder="Şifre tekrar"  autocomplete="off" class="form-control bg-transparent"/>
+                                        <!--end::Repeat Password-->
+                                    </div>
+                                    <!--end::Input group--->
+
+                                    <!--begin::Accept-->
+                                    <div class="fv-row mb-8">
+                                        <label class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="toc" value="1"/>
+                                            <span class="form-check-label fw-semibold text-gray-700 fs-base ms-1">
+                                                Şartları Okudum ve Kabul Ediyorum<a href="#" class="ms-1 link-primary">Şartlar</a>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <!--end::Accept-->
+
+                                    <!--begin::Submit button-->
+                                    <div class="d-grid mb-10">
+                                        <button type="submit" class="btn btn-primary">
+                                            <!--begin::Indicator label-->
+                                            <span class="indicator-label">
+                                                Kayıt Ol</span>
+                                            <!--end::Indicator label-->
+
+                                            <!--begin::Indicator progress-->
+                                            <span class="indicator-progress">
+                                                Lütfen Bekleyin...    <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                                            </span>
+                                            <!--end::Indicator progress--> 
+                                        </button>
+                                    </div>
+                                    <!--end::Submit button-->
+                                
+                                    <!--begin::Sign up-->
+                                    <div class="text-gray-500 text-center fw-semibold fs-6">
+                                        Zaten bir hesabınız var mı ?
+
+                                        <a asp-controller="Auth" asp-action="Login" class="link-primary fw-semibold">
+                                           Giriş Yap
+                                        </a>
+                                    </div>
+                                    <!--end::Sign up-->
+                                </form>
+                                <!--end::Form--> 
+                            </div>
+                            <!--end::Wrapper-->
+
+                            <!--begin::Footer-->  
+                                <div class="row fw-semibold text-primary">
+                                    <div class="col-md-6 d-flex justify-content-end">
+                                        <a asp-controller="Home" asp-action="Hakkimizda">Hakkımızda</a>
+                                    </div> 
+                                    <div class="d-flex justify-content-start col-md-6 text-center">
+                                        <a asp-controller="Home" asp-action="Contact">Bize Ulaşın</a>
+                                    </div>
+                                    <div class="d-flex justify-content-center mt-4">
+                                        <p class="text-center fw-bold mx-2 mb-0 text-muted">Aku Yedek Parça</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                         <p class="text-center mx-3 mb-0 text-muted">© Tüm Hakları Saklıdır.</p>
+                                    </div>
+                                </div>
+                            <!--end::Footer-->
+                        </div>
+                        <!--end::Card-->
+                    </div>
+                    <!--end::Body-->
+                </div>
+                <!--end::Authentication - Sign-up-->	
+            </div>
+            <!--end::Root-->
+        <!--end::Main-->
+    </body>
+    <!--end::Body-->
+
+<script>
+    // Element to indecate
+    var button = document.querySelector("#kt_sign_up_submit");
+
+    // Handle button click event
+    button.addEventListener("click", function() {
+        // Activate indicator
+        button.setAttribute("data-kt-indicator", "on");
+
+        // Disable indicator after 3 seconds
+        setTimeout(function() {
+            button.removeAttribute("data-kt-indicator");
+        }, 3000);
+    });
+
+</script>
