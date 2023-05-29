@@ -112,3 +112,22 @@ C:\Users\Acer\Desktop\katalog proje\katalog\Katalog.Dataaccess\obj\Debug\net6.0\
 C:\Users\Acer\Desktop\katalog proje\katalog\Katalog.Dataaccess\obj\Debug\net6.0\Katalog.Dataaccess.pdb
 C:\Users\Acer\Desktop\katalog proje\katalog\Katalog.Dataaccess\obj\Debug\net6.0\Katalog.Dataaccess.genruntimeconfig.cache
 C:\Users\Acer\Desktop\katalog proje\katalog\Katalog.Dataaccess\obj\Debug\net6.0\ref\Katalog.Dataaccess.dll
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Dataaccess\bin\Debug\net6.0\Katalog.Dataaccess.deps.json
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Dataaccess\bin\Debug\net6.0\Katalog.Dataaccess.runtimeconfig.json
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Dataaccess\bin\Debug\net6.0\Katalog.Dataaccess.dll
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Dataaccess\bin\Debug\net6.0\Katalog.Dataaccess.pdb
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Dataaccess\bin\Debug\net6.0\Katalog.Core.dll
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Dataaccess\bin\Debug\net6.0\Katalog.Entity.dll
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Dataaccess\bin\Debug\net6.0\Katalog.Core.pdb
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Dataaccess\bin\Debug\net6.0\Katalog.Entity.pdb
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Dataaccess\obj\Debug\net6.0\Katalog.Dataaccess.csproj.AssemblyReference.cache
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Dataaccess\obj\Debug\net6.0\Katalog.Dataaccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Dataaccess\obj\Debug\net6.0\Katalog.Dataaccess.AssemblyInfoInputs.cache
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Dataaccess\obj\Debug\net6.0\Katalog.Dataaccess.AssemblyInfo.cs
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Dataaccess\obj\Debug\net6.0\Katalog.Dataaccess.csproj.CoreCompileInputs.cache
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Dataaccess\obj\Debug\net6.0\Katalog.Dataaccess.csproj.CopyComplete
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Dataaccess\obj\Debug\net6.0\Katalog.Dataaccess.dll
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Dataaccess\obj\Debug\net6.0\refint\Katalog.Dataaccess.dll
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Dataaccess\obj\Debug\net6.0\Katalog.Dataaccess.pdb
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Dataaccess\obj\Debug\net6.0\Katalog.Dataaccess.genruntimeconfig.cache
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Dataaccess\obj\Debug\net6.0\ref\Katalog.Dataaccess.dll

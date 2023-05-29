@@ -27,7 +27,7 @@ namespace Katalog.Dataaccess.Concrete.Contexts
         {
             ServerVersion version = new MySqlServerVersion(new Version(8, 0, 30));
             // optionsBuilder.UseMySql(@"Server=fet.com.tr;Port=3306;Database=fetcomtr_katalog2;Uid=fetcomtr_katalog2;Pwd=UmutPro123!;", version);
-            optionsBuilder.UseMySql(@"Server=localhost;Port=3306;Database=katalogg;Uid=root;Pwd=Umut2003;", version);
+            optionsBuilder.UseMySql(@"Server=localhost;Port=3306;Database=katalog;Uid=root;Pwd=1525354555;", version);
         }
 
        

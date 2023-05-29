@@ -5,8 +5,6 @@
 @model AjaxViewModel;
 
 
-
-
 <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
     <div class="container">
         <div class="container w-100">
@@ -141,7 +139,7 @@
                                     <td style="vertical-align: middle; "><a href="/Katalog/UrunDetay/@item.UrunID"
                                     class="btn btn-success">Detay</a></td>
 
-                                    @if (User.Identity.IsAuthenticated)
+                                    @if (User.IsInRole("Admin"))
 									{
                                         <td style="vertical-align: middle;"><a href="/Admin/Edit/@item.UrunID"
                                         class="btn btn-warning"><i class="fa-solid fa-pencil"></i>Düzenle</a></td>

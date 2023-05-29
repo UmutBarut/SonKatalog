@@ -100,3 +100,20 @@ C:\Users\Acer\Desktop\katalog proje\katalog\Katalog.Entity\obj\Debug\net6.0\refi
 C:\Users\Acer\Desktop\katalog proje\katalog\Katalog.Entity\obj\Debug\net6.0\Katalog.Entity.pdb
 C:\Users\Acer\Desktop\katalog proje\katalog\Katalog.Entity\obj\Debug\net6.0\Katalog.Entity.genruntimeconfig.cache
 C:\Users\Acer\Desktop\katalog proje\katalog\Katalog.Entity\obj\Debug\net6.0\ref\Katalog.Entity.dll
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Entity\bin\Debug\net6.0\Katalog.Entity.deps.json
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Entity\bin\Debug\net6.0\Katalog.Entity.runtimeconfig.json
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Entity\bin\Debug\net6.0\Katalog.Entity.dll
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Entity\bin\Debug\net6.0\Katalog.Entity.pdb
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Entity\bin\Debug\net6.0\Katalog.Core.dll
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Entity\bin\Debug\net6.0\Katalog.Core.pdb
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Entity\obj\Debug\net6.0\Katalog.Entity.csproj.AssemblyReference.cache
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Entity\obj\Debug\net6.0\Katalog.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Entity\obj\Debug\net6.0\Katalog.Entity.AssemblyInfoInputs.cache
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Entity\obj\Debug\net6.0\Katalog.Entity.AssemblyInfo.cs
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Entity\obj\Debug\net6.0\Katalog.Entity.csproj.CoreCompileInputs.cache
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Entity\obj\Debug\net6.0\Katalog.Entity.csproj.CopyComplete
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Entity\obj\Debug\net6.0\Katalog.Entity.dll
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Entity\obj\Debug\net6.0\refint\Katalog.Entity.dll
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Entity\obj\Debug\net6.0\Katalog.Entity.pdb
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Entity\obj\Debug\net6.0\Katalog.Entity.genruntimeconfig.cache
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Entity\obj\Debug\net6.0\ref\Katalog.Entity.dll

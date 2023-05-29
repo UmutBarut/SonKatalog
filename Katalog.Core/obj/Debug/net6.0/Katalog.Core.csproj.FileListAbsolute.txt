@@ -82,3 +82,17 @@ C:\Users\Acer\Desktop\katalog proje\katalog\Katalog.Core\obj\Debug\net6.0\refint
 C:\Users\Acer\Desktop\katalog proje\katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.pdb
 C:\Users\Acer\Desktop\katalog proje\katalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.genruntimeconfig.cache
 C:\Users\Acer\Desktop\katalog proje\katalog\Katalog.Core\obj\Debug\net6.0\ref\Katalog.Core.dll
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Core\bin\Debug\net6.0\Katalog.Core.deps.json
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Core\bin\Debug\net6.0\Katalog.Core.runtimeconfig.json
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Core\bin\Debug\net6.0\Katalog.Core.dll
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Core\bin\Debug\net6.0\Katalog.Core.pdb
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.csproj.AssemblyReference.cache
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.AssemblyInfoInputs.cache
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.AssemblyInfo.cs
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.csproj.CoreCompileInputs.cache
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.dll
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Core\obj\Debug\net6.0\refint\Katalog.Core.dll
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.pdb
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Core\obj\Debug\net6.0\Katalog.Core.genruntimeconfig.cache
+C:\Users\Umut\Desktop\SonKatalog\Katalog.Core\obj\Debug\net6.0\ref\Katalog.Core.dll
