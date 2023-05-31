@@ -7,5 +7,6 @@ namespace Katalog.ViewModels
     {
         public List<searchresult>? searchresults { get; set; }
         public List<Marka>? Markalar { get; set; }
+        public List<Urun> Urunler { get; set; }
     }
 }

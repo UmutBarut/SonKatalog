@@ -48,7 +48,7 @@ namespace Katalog.Business.Concrete
 
         public async Task<IResult> AddForUrun(IFormFile file, Urun urun)
         {
-            string folderName ="stocks";
+            string folderName ="urunler";
              if (!string.IsNullOrEmpty(urun.ImagePath))
             {
                 _fileHelper.Remove(urun.ImagePath,folderName);

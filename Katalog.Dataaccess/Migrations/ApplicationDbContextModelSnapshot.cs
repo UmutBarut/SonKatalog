@@ -49,7 +49,6 @@ namespace Katalog.Dataaccess.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("AdSoyad")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("ConcurrencyStamp")
@@ -305,6 +304,9 @@ namespace Katalog.Dataaccess.Migrations
                     b.Property<bool>("Pasif")
                         .HasColumnType("tinyint(1)");
 
+                    b.Property<int?>("Price")
+                        .HasColumnType("int");
+
                     b.Property<long>("Siralama")
                         .HasColumnType("bigint");
 
@@ -421,15 +423,14 @@ namespace Katalog.Dataaccess.Migrations
 
             modelBuilder.Entity("Katalog.Entity.Views.searchresult", b =>
                 {
+                    b.Property<string>("ImagePath")
+                        .HasColumnType("longtext");
+
                     b.Property<string>("OEMno")
                         .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("Olculer")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Resim")
                         .IsRequired()
                         .HasColumnType("longtext");
 

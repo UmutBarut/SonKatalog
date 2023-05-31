@@ -41,8 +41,8 @@ namespace Katalog.Controllers
 
             AjaxViewModel model = new()
             {
-                Markalar = _markaService.MarkaList().Data
-
+                Markalar = _markaService.MarkaList().Data,
+                Urunler = _urunService.UrunList().Data
             };
 
             if (search != null)
@@ -50,7 +50,7 @@ namespace Katalog.Controllers
                 using (var Contexts = new ApplicationDbContext())
                 {
                     var query = @$"
-                    SELECT urunler.UrunID, urunler.UrunNo, urunler.UrunAdi, urunler.Olculer, oemler.OEMno, urunler.ImagePath FROM urunler
+                    SELECT urunler.Price ,urunler.UrunID, urunler.UrunNo, urunler.UrunAdi, urunler.Olculer, oemler.OEMno, urunler.ImagePath FROM urunler
                     LEFT JOIN oemler ON(urunler.UrunID = oemler.UrunID)
                     LEFT JOIN uyumluluklar ON(uyumluluklar.UrunID = urunler.UrunID)
                     LEFT JOIN modeller ON(modeller.ModelID = uyumluluklar.ModelID)
@@ -60,6 +60,7 @@ namespace Katalog.Controllers
                     LEFT JOIN firmalar  ON(referanslar.FirmaID = firmalar.FirmaID)
                     WHERE urunler.UrunNo LIKE '{search}'
                     OR urunler.UrunAdi LIKE'{search}'
+                    OR urunler.Price LIKE'{search}'
                     OR urunler.Olculer LIKE'{search}'
                     OR urunler.EANno LIKE'{search}'
                     OR oemler.OEMno LIKE'{search}'

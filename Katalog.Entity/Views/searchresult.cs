@@ -13,6 +13,7 @@ namespace Katalog.Entity.Views
         public string Olculer { get; set; }
         public string OEMno { get; set; }
         public string? ImagePath { get; set; }
+        public int? Price { get; set; }
 
     }
 }

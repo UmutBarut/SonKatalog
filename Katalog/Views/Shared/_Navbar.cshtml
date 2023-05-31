@@ -3,7 +3,11 @@
         <!--begin::Heading-->
         @if(User.Identity.IsAuthenticated)
         {
-            <h1 class="text-dark fw-bold my-0 fs-2">Hoşgeldiniz @User.Identity.Name</h1>
+            <h1 class="text-dark fw-bold my-0 fs-2">Merhaba @User.Identity.Name</h1>
+        }
+        else
+        {
+            <h1  class="text-dark fw-bold my-0 fs-2"><span class="text-warning me-2">AKU</span>Yedek Parça'ya Hoşgeldiniz</h1>
         }
         <!--end::Heading-->
     </div>

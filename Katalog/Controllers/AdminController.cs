@@ -34,7 +34,6 @@ namespace Katalog.Controllers
             _referansService = referansService;
             _uyumlulukService = uyumlulukService;
             _fileService = fileService;
-
         }
 
 
@@ -87,7 +86,7 @@ namespace Katalog.Controllers
                 _fileService.AddForUrun(file, urun);
             }
 
-            return RedirectToAction("Index");
+           return RedirectToAction("KatalogListe","Katalog");
         }
 
         public IActionResult Delete(Urun urun)
@@ -99,7 +98,7 @@ namespace Katalog.Controllers
                 _urunService.Delete(urun);
             }
 
-            return RedirectToAction("Index");
+            return RedirectToAction("Katalogliste","Katalog");
 
 
         }

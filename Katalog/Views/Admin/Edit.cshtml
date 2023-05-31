@@ -14,6 +14,65 @@
                 </div>
                 <div class="card-body">
                     <div class="row">
+                        <div class="col-md-6">
+                            <div class="col-md-12 mb-10">
+                                <div class="col-lg-8">
+                                    <!--begin::Image input-->
+                                    <div class="image-input image-input-outline" data-kt-image-input="true">
+                                        @if(Model.ImagePath == null)
+                                        {
+                                            <!--begin::Image preview wrapper-->
+                                            <div class="image-input-wrapper w-125px h-125px"
+                                                style="opacity:0.2 ; background-image: url(/app/images/logos/AkuNOSResize.png)"></div>
+                                            <!--end::Image preview wrapper-->   
+                                        }
+                                        else
+                                        {
+                                             <!--begin::Image preview wrapper-->
+                                            <div class="image-input-wrapper w-125px h-125px"
+                                                style="opacity:1 ; background-image: url(/app/images/urunler/@Model.ImagePath)"></div>
+                                            <!--end::Image preview wrapper-->  
+                                        }
+                                    
+                                        <!--begin::Edit button-->
+                                        <label
+                                            class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
+                                            data-kt-image-input-action="change" data-bs-toggle="tooltip" data-bs-dismiss="click"
+                                            title="Change avatar">
+                                            <i class="bi bi-pencil-fill fs-7"></i>
+
+                                            <!--begin::Inputs-->
+                                            <input type="file" name="file" accept=".png, .jpg, .jpeg" style="object-fit:cover;" />
+                                            <input type="hidden" name="avatar_remove" />
+                                            <!--end::Inputs-->
+                                        </label>
+                                        <!--end::Edit button--> 
+
+                                        <!--begin::Cancel button-->
+                                        <span
+                                            class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
+                                            data-kt-image-input-action="cancel" data-bs-toggle="tooltip" data-bs-dismiss="click"
+                                            title="Cancel avatar">
+                                            <i class="bi bi-x fs-2"></i>
+                                        </span>
+                                        <!--end::Cancel button-->
+
+                                        <!--begin::Remove button-->
+                                        <span
+                                            class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
+                                            data-kt-image-input-action="remove" data-bs-toggle="tooltip" data-bs-dismiss="click"
+                                            title="Remove avatar">
+                                            <i class="bi bi-x fs-2"></i>
+                                        </span>
+                                        <!--end::Remove button-->
+                                    </div>
+                                    <!--end::Image input-->
+                                </div>
+                            </div>
+                        </div>
+                            
+                        
+
                         <div class="col col-md-6">
                             <div class="mb-10">
                                 <label for="UrunNo" class="required form-label">Ürün No</label>
@@ -48,13 +107,6 @@
                                 <input type="text" class="form-control form-control-sm form-control-solid"
                                     placeholder="Ürün No Giriniz" asp-for="EslestirilenUrunNo" />
                             </div>
-                        </div>
-                        <div class="col col-md-6">
-                            <label for="upload" class="photo-edit-link">
-                                <input type="file" name="file" id="upload" />
-                                <div class="text-center align-items-center photo-edit-div"><i
-                                        class="fa-solid fa-pen photo-edit-icon"></i></div>
-                            </label>
                         </div>
                     </div>
                 </div>
