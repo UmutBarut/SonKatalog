@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using Katalog.Entity;
 using Katalog.Business.Abstracts;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Katalog.ViewModels;
 using Katalog.Dataaccess.Concrete.Contexts;
@@ -50,7 +49,7 @@ namespace Katalog.Controllers
                 using (var Contexts = new ApplicationDbContext())
                 {
                     var query = @$"
-                    SELECT urunler.Price ,urunler.UrunID, urunler.UrunNo, urunler.UrunAdi, urunler.Olculer, oemler.OEMno, urunler.ImagePath FROM urunler
+                    SELECT urunler.UrunID, urunler.UrunNo, urunler.UrunAdi, urunler.Olculer, oemler.OEMno, urunler.ImagePath FROM urunler
                     LEFT JOIN oemler ON(urunler.UrunID = oemler.UrunID)
                     LEFT JOIN uyumluluklar ON(uyumluluklar.UrunID = urunler.UrunID)
                     LEFT JOIN modeller ON(modeller.ModelID = uyumluluklar.ModelID)
@@ -60,7 +59,6 @@ namespace Katalog.Controllers
                     LEFT JOIN firmalar  ON(referanslar.FirmaID = firmalar.FirmaID)
                     WHERE urunler.UrunNo LIKE '{search}'
                     OR urunler.UrunAdi LIKE'{search}'
-                    OR urunler.Price LIKE'{search}'
                     OR urunler.Olculer LIKE'{search}'
                     OR urunler.EANno LIKE'{search}'
                     OR oemler.OEMno LIKE'{search}'

@@ -1,7 +1,5 @@
 using Katalog.Entity;
 using Katalog.Business.Abstracts;
-
-
 using Microsoft.AspNetCore.Mvc;
 using Katalog.ViewModels;
 using Microsoft.AspNetCore.Authorization;
@@ -138,8 +136,6 @@ namespace Katalog.Controllers
                     _uyumlulukService.Add(uyumluluk);
                 }
             }
-
-
             return RedirectToAction("Index");
         }
 

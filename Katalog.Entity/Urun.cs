@@ -20,8 +20,6 @@ namespace Katalog.Entity
         public long Siralama { get; set; }
         public bool Pasif { get; set; }
         public string? ImagePath { get; set; }
-        public int? Price { get; set; }
-
-      
+        
     }
 }

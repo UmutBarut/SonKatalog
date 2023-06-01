@@ -304,9 +304,6 @@ namespace Katalog.Dataaccess.Migrations
                     b.Property<bool>("Pasif")
                         .HasColumnType("tinyint(1)");
 
-                    b.Property<int?>("Price")
-                        .HasColumnType("int");
-
                     b.Property<long>("Siralama")
                         .HasColumnType("bigint");
 
@@ -433,6 +430,9 @@ namespace Katalog.Dataaccess.Migrations
                     b.Property<string>("Olculer")
                         .IsRequired()
                         .HasColumnType("longtext");
+
+                    b.Property<int?>("Price")
+                        .HasColumnType("int");
 
                     b.Property<string>("UrunAdi")
                         .IsRequired()
